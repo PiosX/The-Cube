@@ -1,0 +1,48 @@
+.outcomes {
+	padding: 0 30px;
+	background: var(--text-color);
+	color: var(--background);
+	& &__title {
+		font-size: 100px;
+		letter-spacing: -3px;
+		text-transform: uppercase;
+		margin-bottom: 38px;
+		padding-top: 38px;
+	}
+	& &__content {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 30px;
+		padding-bottom: 100px;
+		&-stat {
+			display: flex;
+			gap: 19px;
+			&-above {
+				font-size: 12px;
+				text-transform: uppercase;
+				margin: 0;
+				padding: 0;
+			}
+			&-num {
+				display: flex;
+				flex-direction: column;
+				&-text {
+					font-size: 180px;
+					font-weight: 500;
+					letter-spacing: -5px;
+					margin: 0;
+					padding: 0;
+					margin-top: -45px;
+				}
+				&-desc {
+					font-size: 18px;
+					font-weight: 300;
+					text-transform: uppercase;
+					margin: 0;
+					padding: 0;
+					display: block;
+				}
+			}
+		}
+	}
+}
