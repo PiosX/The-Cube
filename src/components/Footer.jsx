@@ -15,7 +15,7 @@ const Footer = () => {
 					<div className="footer__info-social-inst">INSTAGRAM</div>
 					<a
 						href="https://www.instagram.com/_piosx/"
-						className="footer__info-social-inst-link"
+						className="footer__info-social-link"
 					>
 						_piosx
 					</a>
@@ -24,7 +24,7 @@ const Footer = () => {
 					<div className="footer__info-mail-text">Email</div>
 					<a
 						href="mailto:pios.pios@op.pl"
-						className="footer__info-social-inst-link"
+						className="footer__info-mail-link"
 					>
 						pios.pios@op.pl
 					</a>
