@@ -10,7 +10,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
 	return (
-		<>
+		<div>
 			<Header />
 			<Roll />
 			<Cube />
@@ -19,7 +19,7 @@ const Home = () => {
 			<Slides />
 			<Outcomes />
 			<Footer />
-		</>
+		</div>
 	);
 };
 

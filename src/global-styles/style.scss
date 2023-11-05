@@ -5,6 +5,11 @@
 @use "styles/root.scss";
 @use "styles/fonts.scss";
 
+html {
+	$vw: 100vw;
+	font-size: calc($vw / 1920px * 10px);
+}
+
 body,
 html {
 	height: 100%;

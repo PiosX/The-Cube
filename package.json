@@ -12,9 +12,12 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.490",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.69.5"
+    "react-locomotive-scroll": "^0.2.2",
+    "sass": "^1.69.5",
+    "tslib": "^2.6.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
