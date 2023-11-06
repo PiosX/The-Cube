@@ -4,10 +4,10 @@
 	& &__cubes {
 		display: flex;
 		justify-content: space-between;
-		padding-right: 200px;
-		margin-bottom: 100px;
+		padding-right: 20rem;
+		margin-bottom: 10rem;
 		&-title {
-			font-size: 100px;
+			font-size: 10rem;
 		}
 		&-desc {
 			&-text {
@@ -30,7 +30,7 @@
 	}
 	& &__content {
 		display: flex;
-		gap: 30px;
+		gap: 3rem;
 		font-size: 12px;
 		flex-wrap: wrap;
 		&-mat1,
@@ -73,6 +73,14 @@
 			text-transform: uppercase;
 			padding: 0;
 			margin: 0;
+		}
+	}
+	@media screen and (max-width: 1024px) {
+		& &__cubes {
+			padding-right: 3rem;
+			&-title {
+				font-size: 12rem;
+			}
 		}
 	}
 }

@@ -15,6 +15,7 @@ const Header = () => {
 				<p className="header__logo-text">The Cube</p>
 			</div>
 			<div className="header__nav">
+				<div className="header__nav-mobile"></div>
 				<div className="header__nav-cube nav-btn">Cube</div>
 				<div className="header__nav-highlighted nav-btn">
 					Highlighted
