@@ -38,8 +38,25 @@
 		}
 	}
 
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 768px) {
+		& &__title {
+			font-size: 8rem;
+			width: fit-content;
+			height: fit-content;
+			padding: 8rem 8rem;
+			margin-top: 3rem;
+			line-height: 0;
+			border-radius: 10px;
+		}
 		& &__content {
+			flex-wrap: wrap;
+			text-align: center;
+			&-desc {
+				flex-basis: 100%;
+				text-align: center;
+				margin-top: 20rem;
+				margin-bottom: 20rem;
+			}
 		}
 	}
 }

@@ -84,6 +84,25 @@
 		background: var(--text-color);
 		margin-top: 6px;
 	}
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: 768px) {
+		& &__title {
+			&-text {
+				font-size: 20rem;
+			}
+			&-arrow {
+				& img {
+					width: 28rem;
+					height: 18rem;
+				}
+			}
+		}
+		& &__info {
+			&-desc {
+				font-size: 4rem;
+			}
+		}
+		& &__links {
+			font-size: 4rem;
+		}
 	}
 }

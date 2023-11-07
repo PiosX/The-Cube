@@ -183,7 +183,7 @@
 			background-color: var(--background);
 			&-mobile {
 				position: relative;
-				width: 20rem;
+				width: 13rem;
 				height: 2px;
 				background: var(--text-color);
 				border-radius: 10px;
@@ -194,7 +194,7 @@
 					left: 0;
 					top: 10px;
 					content: "";
-					width: 20rem;
+					width: 13rem;
 					height: 2px;
 					background: var(--text-color);
 					border-radius: 10px;
@@ -204,7 +204,7 @@
 					left: 0;
 					top: 20px;
 					content: "";
-					width: 20rem;
+					width: 13rem;
 					height: 2px;
 					background: var(--text-color);
 					border-radius: 10px;
@@ -233,11 +233,11 @@
 				}
 				&-subtitle {
 					margin-top: 20vh;
-					font-size: 5rem;
+					font-size: 4rem;
 				}
 				&-main {
 					width: 100%;
-					font-size: 20rem;
+					font-size: 18rem;
 					padding: 0 30px;
 				}
 				&-assets {

@@ -59,4 +59,22 @@
 			}
 		}
 	}
+	@media screen and (max-width: 768px) {
+		& &__content {
+			flex-direction: column;
+			gap: 10rem;
+			&-stat {
+				&-num {
+					width: 100%;
+					&-text {
+						font-size: 32rem;
+					}
+					&-desc {
+						text-align: right;
+						font-size: 6rem;
+					}
+				}
+			}
+		}
+	}
 }

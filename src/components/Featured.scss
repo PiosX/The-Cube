@@ -83,4 +83,41 @@
 			}
 		}
 	}
+	@media screen and (max-width: 768px) {
+		& &__cubes {
+			padding-right: 0;
+			&-title {
+				font-size: 12rem;
+			}
+			&-desc {
+				&-text {
+					font-size: 4rem;
+					margin-top: 3px;
+				}
+				&-btn {
+					font-size: 6rem;
+					width: auto;
+					height: fit-content;
+					padding: 2rem 4rem;
+					margin-top: 3rem;
+					line-height: 0;
+					border-radius: 10px;
+					& img {
+						width: 10rem;
+						height: 10rem;
+					}
+				}
+			}
+		}
+		& &__content {
+			&-mat1,
+			&-mat2,
+			&-mat3,
+			&-mat4 {
+				&-vid {
+					border-radius: 15px;
+				}
+			}
+		}
+	}
 }
