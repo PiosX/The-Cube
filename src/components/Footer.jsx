@@ -3,7 +3,7 @@ import "./Footer.scss";
 
 const Footer = () => {
 	return (
-		<div className="footer">
+		<div className="footer" data-scroll-section>
 			<div className="footer__title">
 				<div className="footer__title-text">Contact Me</div>
 				<div className="footer__title-arrow">

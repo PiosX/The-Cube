@@ -12,6 +12,9 @@
   "dependencies": {
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^0.9.490",
+    "classnames": "^2.3.2",
+    "gsap": "^3.12.2",
+    "gsap-trial": "^3.12.2",
     "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

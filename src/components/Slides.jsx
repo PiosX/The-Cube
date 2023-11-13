@@ -5,7 +5,7 @@ import "./Slides.scss";
 
 const Slides = () => {
 	return (
-		<div className="slides">
+		<div className="slides" data-scroll-section>
 			<div className="slides__img">
 				<img
 					src={slide1}

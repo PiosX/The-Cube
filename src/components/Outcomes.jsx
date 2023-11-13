@@ -2,7 +2,7 @@ import "./Outcomes.scss";
 
 const Outcomes = () => {
 	return (
-		<div className="outcomes">
+		<div className="outcomes" data-scroll-section>
 			<div className="outcomes__title">Outcomes</div>
 			<div className="outcomes__content">
 				<div className="outcomes__content-stat">

@@ -25,6 +25,18 @@
 				font-size: 16px;
 				color: var(--background);
 				padding-left: 15px;
+				cursor: pointer;
+				background-image: radial-gradient(
+					circle at 10% 20%,
+					rgb(153, 103, 186) 41.2%,
+					rgb(0, 113, 227) 90%
+				);
+				background-size: 300%;
+				background-position: right;
+				transition: background-position 1s;
+				&:hover {
+					background-position: left;
+				}
 			}
 		}
 	}
@@ -38,9 +50,30 @@
 		&-mat3,
 		&-mat4 {
 			&-vid {
-				height: 700px;
-				border: 1px solid var(--text-color);
+				max-height: 680px;
+				height: 100%;
 				border-radius: 35px;
+				overflow: hidden;
+				& video {
+					width: 100%;
+					height: 100%;
+					clip-path: inset(100% 0% 0% 0%);
+					transition: clip-path 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+					&.is-reveal {
+						clip-path: inset(0% 0% 0% 0%);
+					}
+				}
+				& img {
+					position: relative;
+					width: 100%;
+					top: 50%;
+					transform: translateY(-50%);
+					clip-path: inset(100% 0% 0% 0%);
+					transition: clip-path 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+					&.is-reveal {
+						clip-path: inset(0% 0% 0% 0%);
+					}
+				}
 			}
 			&-text {
 				margin-top: 10px;
@@ -73,6 +106,22 @@
 			text-transform: uppercase;
 			padding: 0;
 			margin: 0;
+		}
+	}
+	@media screen and (min-width: 1025px) {
+		& &__content {
+			&-mat1 {
+				max-width: 63rem;
+			}
+			&-mat2 {
+				max-width: 114rem;
+			}
+			&-mat3 {
+				max-width: 114rem;
+			}
+			&-mat4 {
+				max-width: 63rem;
+			}
 		}
 	}
 	@media screen and (max-width: 1024px) {

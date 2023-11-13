@@ -8,6 +8,7 @@
 	text-transform: uppercase;
 	display: flex;
 	gap: 26px;
+	white-space: nowrap;
 	margin-top: 30rem;
 	overflow: hidden;
 	&-box {
@@ -20,6 +21,11 @@
 			background: var(--background);
 			transform: rotate(45deg);
 		}
+	}
+	&-cont {
+		display: flex;
+		gap: 26px;
+		animation: 8s slide infinite linear;
 	}
 
 	@media screen and (max-width: 1024px) {
@@ -35,5 +41,14 @@
 				height: 10px;
 			}
 		}
+	}
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
 	}
 }

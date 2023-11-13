@@ -24,6 +24,13 @@
 		font-weight: 500;
 		text-transform: uppercase;
 		margin-top: 140px;
+		&-text {
+			padding: 0;
+			opacity: 0;
+			&.is-reveal {
+				opacity: 1;
+			}
+		}
 	}
 	& &__model {
 		position: absolute;
@@ -56,4 +63,9 @@
 			margin-top: 14rem;
 		}
 	}
+}
+
+.char {
+	transform: translateY(115px);
+	transition: transform 0.5s;
 }

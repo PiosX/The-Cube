@@ -1,15 +1,34 @@
+import { useEffect, useRef } from "react";
 import "./Header.scss";
 import arrow from "../assets/arrow.svg";
 import cube from "../assets/cube.svg";
 import material from "../assets/material.svg";
 import effect from "../assets/effect.svg";
-// import var1 from "../assets/var1.png";
-// import var2 from "../assets/var2.png";
+import gsap from "gsap";
+import { SplitText } from "gsap-trial/SplitText";
 import Spline from "@splinetool/react-spline";
 
+gsap.registerPlugin(SplitText);
+
 const Header = () => {
+	const component = useRef();
+	useEffect(() => {
+		let splitText = new SplitText(".header__content-title-subtitle", {
+			type: "chars",
+		});
+		let chars = splitText.chars;
+
+		gsap.from(chars, {
+			y: -20,
+			opacity: 0,
+			stagger: 0.02,
+			ease: "back.out",
+			duration: 1,
+		});
+	});
+
 	return (
-		<header className="header">
+		<header className="header" data-scroll-section>
 			<div className="header__logo">
 				<div className="header__logo-cube"></div>
 				<p className="header__logo-text">The Cube</p>
@@ -24,7 +43,10 @@ const Header = () => {
 			</div>
 			<div className="header__content">
 				<div className="header__content-title">
-					<div className="header__content-title-subtitle">
+					<div
+						className="header__content-title-subtitle"
+						ref={component}
+					>
 						Sculpting the Future with Tech Cubes
 					</div>
 					<div className="header__content-title-main">
